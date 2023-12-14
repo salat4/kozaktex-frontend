@@ -10,11 +10,8 @@ const poppins = Poppins({
   weight: ["400", "600"],
   subsets: ["latin"],
 });
-const poppinsHover = Poppins({
-  weight: "600",
-  subsets: ["latin"],
-});
-const roboto = Poppins({
+
+const roboto = Roboto({
   weight: "400",
   subsets: ["latin"],
 });
