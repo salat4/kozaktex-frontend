@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import s from "./Header.module.css";
-import arrow from "../../public/svg/arrow__down.svg";
 import headerLogo from "../../public/svg/logokozak.svg";
 import { Poppins } from "next/font/google";
 import { Roboto } from "next/font/google";

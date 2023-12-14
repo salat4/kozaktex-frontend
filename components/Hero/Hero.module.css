@@ -1,6 +1,8 @@
 .hero__container {
-  padding-left: 240px;
-  padding-right: 240px;
+  padding-left: 130px;
+  padding-right: 130px;
+  padding-top: 125px;
+  padding-bottom: 258px;
 }
 .hero__title {
   color: #fff;
@@ -8,10 +10,12 @@
   font-style: normal;
   margin-bottom: 31px;
   line-height: 130%;
+  width: 852px;
 }
 .hero__text {
   color: #fff;
   font-size: 17px;
   font-style: normal;
   line-height: 190%;
+  width: 656px;
 }

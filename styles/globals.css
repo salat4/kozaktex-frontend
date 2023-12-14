@@ -36,4 +36,28 @@ table {
 }
 .container__main {
   background-image: url("../public/image/bg_main.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+/* .slick-prev:before {
+  content: url("../public/svg/arrow_left.svg") !important;
+}
+.slick-next:before {
+  content: url("../public/svg/arrow_right.svg") !important;
+} */
+
+/* .team__arrow__left::after {
+  content: url("../../public/svg/arrow_left.svg");
+}
+
+.team__arrow__right::after {
+  content: url("../../public/svg/arrow_right.svg");
+}
+
+.team__arrow__left:hover::after {
+  content: url("../../public/svg/arrow_left_white.svg");
+}
+
+.team__arrow__right:hover::after {
+  content: url("../../public/svg/arrow_right_white.svg");
+} */

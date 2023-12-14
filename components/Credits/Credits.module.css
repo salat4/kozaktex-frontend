@@ -1,0 +1,247 @@
+.credits__container {
+  padding-left: 130px;
+  padding-right: 130px;
+  padding-bottom: 160px;
+}
+.credits__title {
+  color: #fff;
+  font-size: 42px;
+  font-style: normal;
+  line-height: 140%;
+  margin-bottom: 35px;
+}
+.credits__golubimiru {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+}
+.credits__list__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 195px;
+  cursor: pointer;
+  height: 103px;
+  border: 1px solid white;
+}
+.credits__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.credits__autologix::after {
+  content: url("../../public/svg/credits/AutoLogix.svg");
+}
+.credits__clubbersport::after {
+  content: url("../../public/svg/credits/clubberspot.png");
+}
+.credits__golubimiru::after {
+  margin-left: 5px;
+  content: url("../../public/svg/credits/golubmiru.svg");
+}
+.credits__pikni::after {
+  content: url("../../public/svg/credits/pikni.svg");
+}
+.credits__webcraft::after {
+  content: url("../../public/svg/credits/webcraft.svg");
+}
+@keyframes fadeInOutAutologix {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    content: url("../../public/svg/credits/autologix__color.svg");
+    opacity: 1;
+  }
+}
+@keyframes fadeInOutClubberSpot {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    content: url("../../public/svg/credits/clubberspot__color.png");
+    opacity: 1;
+  }
+}
+@keyframes fadeInOutGolubiMiru {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    content: url("../../public/svg/credits/golubmiru__color.svg");
+    color: #f5da7e;
+    opacity: 1;
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    color: #f5da7e;
+    opacity: 1;
+  }
+}
+@keyframes changeColorBack {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    color: white;
+    opacity: 1;
+  }
+}
+@keyframes fadeInOutPikni {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    content: url("../../public/svg/credits/pikni__color.svg");
+    opacity: 1;
+  }
+}
+@keyframes fadeInOutWebCraft {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    content: url("../../public/svg/credits/webcraft__color.svg");
+    opacity: 1;
+  }
+}
+/* Зміна зображення при hover */
+.credits__autologix:hover::after {
+  animation: fadeInOutAutologix 0.7s ease forwards;
+}
+
+.credits__clubbersport:hover::after {
+  animation: fadeInOutClubberSpot 0.7s ease forwards;
+}
+
+.credits__golubimiru:hover::after {
+  animation: fadeInOutGolubiMiru 0.7s ease forwards;
+}
+.credits__golubimiru:hover .credits__golubimiru__text {
+  animation: changeColor 0.7s ease forwards;
+}
+
+.credits__pikni:hover::after {
+  animation: fadeInOutPikni 0.7s ease forwards;
+}
+
+.credits__webcraft:hover::after {
+  animation: fadeInOutWebCraft 0.7s ease forwards;
+}
+@keyframes fadeInOutAutologixOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    content: url("../../public/svg/credits/AutoLogix.svg");
+    opacity: 1;
+  }
+}
+@keyframes fadeInOutAutoClubberspotOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    content: url("../../public/svg/credits/clubberspot.png");
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOutAutoGolubmiruOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    content: url("../../public/svg/credits/golubmiru.svg");
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOutAutoPikniOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    content: url("../../public/svg/credits/pikni.svg");
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOutAutoWebcraftOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    content: url("../../public/svg/credits/webcraft.svg");
+    opacity: 1;
+  }
+}
+
+.credits__autologix:not(:hover)::after {
+  content: url("../../public/svg/credits/autologix__color.svg");
+  animation: fadeInOutAutologixOut 0.7s ease forwards;
+}
+.credits__clubbersport:not(:hover)::after {
+  content: url("../../public/svg/credits/clubberspot__color.png");
+  animation: fadeInOutAutoClubberspotOut 0.7s ease forwards;
+}
+.credits__golubimiru:not(:hover)::after {
+  content: url("../../public/svg/credits/golubmiru__color.svg");
+  animation: fadeInOutAutoGolubmiruOut 0.7s ease forwards;
+}
+.credits__golubimiru:not(:hover) .credits__golubimiru__text {
+  animation: changeColorBack 0.7s ease forwards;
+}
+.credits__pikni:not(:hover)::after {
+  content: url("../../public/svg/credits/pikni__color.svg");
+  animation: fadeInOutAutoPikniOut 0.7s ease forwards;
+}
+.credits__webcraft:not(:hover)::after {
+  content: url("../../public/svg/credits/webcraft__color.svg");
+  animation: fadeInOutAutoWebcraftOut 0.7s ease forwards;
+}

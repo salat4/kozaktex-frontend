@@ -1,0 +1,35 @@
+.team__container {
+  padding-left: 130px;
+  padding-right: 130px;
+  padding-bottom: 160px;
+}
+.team__title {
+  color: #fff;
+  font-size: 42px;
+  font-style: normal;
+  line-height: 140%;
+  margin-bottom: 60px;
+}
+.team__arrow__left::before {
+  content: url("../../public/svg/arrow_left.svg") !important;
+}
+
+.team__arrow__right::before {
+  content: url("../../public/svg/arrow_right.svg") !important;
+}
+
+.team__arrow__left:hover::before {
+  content: url("../../public/svg/arrow_left_white.svg") !important;
+}
+
+.team__arrow__right:hover::before {
+  content: url("../../public/svg/arrow_right_white.svg") !important;
+}
+.js {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.team__image:hover {
+  box-shadow: 0px 0px 80px 0px rgba(25, 84, 52, 0.7);
+}
